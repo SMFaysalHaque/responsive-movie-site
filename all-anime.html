@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/863758b421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    <title>All Anime</title>
+</head>
+<body>
+    <!-- header container start -->
+    <div class="container-fluid p-0">
+        <!-- header start -->
+        <header>
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+        </header>
+        <!-- header end -->
+    </div>
+    <!-- header container end -->
+
+    <!-- main container start -->
+    <main class="container p-0">
+
+        <!-- before slider text start -->
+        <h3 class="text-center mt-5 mb-3">Most Popular Anime</h3>
+        <!-- before slider text end -->
+
+        <!-- top slider start -->
+        <div class="top-slider">
+            <div>
+                <img src="images/movies/Day-Shift-2022-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/movies/I-Am-Groot-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/Anime/Classroom-of-the-Elite-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/tv-series/Black-Bird-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+        </div>
+        <!-- top slider end -->
+        <!-- search movies and subtitles start -->
+        <div class="input-group mt-5 mb-5">
+            <button type="button" class="btn btn-outline-info rounded-pill me-2" id="validationTooltipUsernamePrepend"><i class="fas fa-search align-middle me-1"></i>Search</button>
+            <input type="text" class="rounded-pill form-control" id="validationTooltipUsername" placeholder="Search Movies and Subtitles..." aria-describedby="validationTooltipUsernamePrepend" required="">
+        </div>
+        <!-- search movies and subtitles end -->
+
+        <!-- filter start -->
+        <div class="row">
+            <div class="col-12 col-md-2 px-3">
+                <h5>Quality:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Qualities</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2 px-3">
+                <h5>Genre:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Genres</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2 px-3">
+                <h5>Rating:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Ratings</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div> 
+            <div class="col-12 col-md-2 px-3">
+                <h5>Year:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Years</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2 px-3">
+                <h5>Language:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Languages</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-2 px-3">
+                <h5>Order By:</h5>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>All Orders</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+        <!-- filter end -->
+
+        <!-- latest-anime-area start -->
+        <div class="row">
+            <div class="col-12 mt-5 mb-3 latest-movie-area-text">
+                <span class="fs-3 me-1"><i class="fas fa-play"></i></span>
+                <span class="fs-3 me-1">All Anime</span>
+            </div>
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Cardfight-Vanguard-overDress-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Classroom-of-the-Elite-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Engage-Kiss-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Lycoris-Recoil-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/One-Piece-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Parallel-World-Pharmacy-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/RWBY-Ice-Queendom-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Yurei-Deco-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Cardfight-Vanguard-overDress-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Classroom-of-the-Elite-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Engage-Kiss-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Lycoris-Recoil-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/One-Piece-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Parallel-World-Pharmacy-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/RWBY-Ice-Queendom-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Yurei-Deco-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Cardfight-Vanguard-overDress-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Classroom-of-the-Elite-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Engage-Kiss-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Luminous-Witches-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Lycoris-Recoil-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/My-Isekai-Life-I-Gained-a-Second-Character-Class-and-Became-the-Strongest-Sage-in-the-World-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/One-Piece-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Parallel-World-Pharmacy-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/RWBY-Ice-Queendom-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+
+            <!-- single post start -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 border border-danger p-2">
+                <div class="d-flex justify-content-center">
+                    <div class="post-thumbnail">
+                        <a href="">
+                            <img width="100%" height="100%" src="images/Anime/Yurei-Deco-Cover.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- single post end -->
+        </div>
+
+        <!-- pagination start -->
+        <div class="col-12 d-flex justify-content-center mt-5 mb-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">A</a></li>
+                    <li class="page-item"><a class="page-link" href="#">B</a></li>
+                    <li class="page-item"><a class="page-link" href="#">C</a></li>
+                    <li class="page-item"><a class="page-link" href="#">D</a></li>
+                    <li class="page-item"><a class="page-link" href="#">E</a></li>
+                    <li class="page-item"><a class="page-link" href="#">F</a></li>
+                    <li class="page-item"><a class="page-link" href="#">G</a></li>
+                    <li class="page-item"><a class="page-link" href="#">H</a></li>
+                    <li class="page-item"><a class="page-link" href="#">I</a></li>
+                    <li class="page-item"><a class="page-link" href="#">J</a></li>
+                    <li class="page-item"><a class="page-link" href="#">K</a></li>
+                    <li class="page-item"><a class="page-link" href="#">L</a></li>
+                    <li class="page-item"><a class="page-link" href="#">M</a></li>
+                    <li class="page-item"><a class="page-link" href="#">N</a></li>
+                    <li class="page-item"><a class="page-link" href="#">O</a></li>
+                    <li class="page-item"><a class="page-link" href="#">P</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Q</a></li>
+                    <li class="page-item"><a class="page-link" href="#">R</a></li>
+                    <li class="page-item"><a class="page-link" href="#">S</a></li>
+                    <li class="page-item"><a class="page-link" href="#">T</a></li>
+                    <li class="page-item"><a class="page-link" href="#">U</a></li>
+                    <li class="page-item"><a class="page-link" href="#">V</a></li>
+                    <li class="page-item"><a class="page-link" href="#">W</a></li>
+                    <li class="page-item"><a class="page-link" href="#">X</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Y</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Z</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- pagination end -->
+
+        <!-- latest-anime-area end -->
+    </main>
+    <!-- main container end -->
+
+
+
+    <!-- footer container start -->
+    <footer class="container-fluid p-0 footer-style">
+        <!-- switch-button start -->
+        <div class="container-fluid bg-light theme-change">
+            <div class="container">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="changeTheme" checked>
+                    <label class="form-check-label" for="changeTheme">Change Theme?</label>
+                </div>
+            </div>
+        </div>
+        <!-- switch-button end -->
+
+        <!-- footer pagination start -->
+        <div class="container">
+            <div class="col-12">
+                <p><span>A-Z List</span> | <small>Movie List order by alphabet name A to Z.</small></p>
+
+                <!-- pagination start -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">A</a></li>
+                        <li class="page-item"><a class="page-link" href="#">B</a></li>
+                        <li class="page-item"><a class="page-link" href="#">C</a></li>
+                        <li class="page-item"><a class="page-link" href="#">D</a></li>
+                        <li class="page-item"><a class="page-link" href="#">E</a></li>
+                        <li class="page-item"><a class="page-link" href="#">F</a></li>
+                        <li class="page-item"><a class="page-link" href="#">G</a></li>
+                        <li class="page-item"><a class="page-link" href="#">H</a></li>
+                        <li class="page-item"><a class="page-link" href="#">I</a></li>
+                        <li class="page-item"><a class="page-link" href="#">J</a></li>
+                        <li class="page-item"><a class="page-link" href="#">K</a></li>
+                        <li class="page-item"><a class="page-link" href="#">L</a></li>
+                        <li class="page-item"><a class="page-link" href="#">M</a></li>
+                        <li class="page-item"><a class="page-link" href="#">N</a></li>
+                        <li class="page-item"><a class="page-link" href="#">O</a></li>
+                        <li class="page-item"><a class="page-link" href="#">P</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Q</a></li>
+                        <li class="page-item"><a class="page-link" href="#">R</a></li>
+                        <li class="page-item"><a class="page-link" href="#">S</a></li>
+                        <li class="page-item"><a class="page-link" href="#">T</a></li>
+                        <li class="page-item"><a class="page-link" href="#">U</a></li>
+                        <li class="page-item"><a class="page-link" href="#">V</a></li>
+                        <li class="page-item"><a class="page-link" href="#">W</a></li>
+                        <li class="page-item"><a class="page-link" href="#">X</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Y</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Z</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- pagination end -->
+            </div>
+
+            <!-- footer info area start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <h4>Help</h4>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>Links</h4>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                    </div>
+                    <div class="col-md-6 col-12 text-center">
+                        <h1>smallFoot</h1>
+                        <h6>We Have Total <span style="color: #FF6C4C;">19539</span> Movies, Tv Series And Anime In Out Database.</h6>
+                        <h6>Disclaimer: We do not store any files on our server. All contents are provided by non-affiliated third parties. We just index those links which are already available in internet.</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- footer info area end -->
+        </div>
+        <!-- footer pagination end -->
+    </footer>
+    <!-- footer container end  -->
+
+    <!-- script start -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.min.js"></script>
+    <script>
+        var slider = tns({
+            container: '.top-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: true
+        });
+    </script>
+    <!-- script end -->
+</body>
+</html>

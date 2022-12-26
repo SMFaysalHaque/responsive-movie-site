@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/863758b421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css">
+    <title>Movie Details</title>
+</head>
+<body>
+    <!-- header container start -->
+    <div class="container-fluid p-0">
+        <!-- header start -->
+        <header>
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+        </header>
+        <!-- header end -->
+    </div>
+    <!-- header container end -->
+
+    <!-- main body start -->
+    <main class="container">
+        <!-- before slider text start -->
+        <h3 class="text-center">Most Popular Movies</h3>
+        <!-- before slider text end -->
+
+        <!-- top slider start -->
+        <div class="top-slider">
+            <div>
+                <img src="images/movies/Day-Shift-2022-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/movies/I-Am-Groot-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/Anime/Classroom-of-the-Elite-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+            <div>
+                <img src="images/tv-series/Black-Bird-Cover.jpg" class="d-block w-50" alt="...">
+            </div>
+        </div>
+        <!-- top slider end -->
+
+        <!-- movie details start -->
+        <div class="row mt-5 mb-5">
+            <!-- movie's img and download area start -->
+            <div class="col-12 col-md-3 download-area">
+                <img width="100%" src="images/movies/Day-Shift-2022-Cover.jpg" alt="" srcset="">
+                <button class="mt-2 p-2"><a href="#"><i class="fas fa-download me-2"></i>Download</a></button>
+            </div>
+            <!-- movie's img and download area end -->
+            
+            <!-- movie full details area start -->
+            <div class="col-12 col-md-6">
+
+                <!-- movie name, year & category area start -->
+                <h1 class="fw-bold">Day Shift</h1>
+                <h2 class="mt-3">2022</h2>
+                <h5>
+                    <a href="#">Action</a>, 
+                    <a href="#">Horror</a>,
+                    <a href="#">Adventure</a>
+                </h5>
+                <!-- movie name, year & category area end -->
+
+                <!-- available area start -->
+                <div class="row align-items-center mt-3 quality-area">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h6 class="mb-0 me-1">Available In:</h6>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <button class="my-1 me-1"><a href="#">720p.WEB*</a></button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <button class="my-1"><a href="#">1080p.WEB*</a></button>
+                    </div>
+                </div>
+                <!-- available area end -->
+
+                <!-- watch now area start -->
+                <div class="col-12 mt-2 watch-now">
+                    <button class="w-100"><a href="#"><i class="fas fa-play-circle me-2"></i>Watch Now</a></button>
+                </div>
+                <!-- watch now area end -->
+
+                <!-- movie trailer and subtitle area start -->
+                <div class="row mt-2 trailer-subtitle">
+                    <div class="col-12 col-md-6 my-1">
+                        <button class="w-100"><a href="#"><i class="fab fa-youtube me-2"></i>Movie Trailer</a></button>
+                    </div>
+                    <div class="col-12 col-md-6 my-1">
+                        <button class="w-100"><a href="#"><i class="fas fa-closed-captioning me-2"></i>Download Subtitle</a></button>
+                    </div>
+                </div>
+                <!-- movie trailer and subtitle area end -->
+
+                <!-- summary area start -->
+                <div class="col-12 mt-3">
+                    <p><span class="fw-bold me-1">Summary :</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos voluptatem aut! Modi animi dignissimos recusandae consectetur saepe odio asperiores iusto fugit rem architecto cum, natus, laborum quidem aliquid necessitatibus.</p>
+                </div>
+                <!-- summary area end -->
+
+                <!-- audience reaction & IMDb area start -->
+                <div class="row reaction-IMDb mt-3">
+                    <div class="col-12 col-md-3 my-1">
+                        <a href="#"> <span class="me-2" style="color: black; font-weight: bold; border: 1px solid black; background-color: #fcb503; padding: 1px 10px;">IMDb</span> 8.5<i class="fas fa-star ms-2"></i></a>
+                    </div>
+                    <div class="col-12 col-md-3 my-1">
+                        <p><i class="fas fa-heart me-2"></i> Love 400</p>
+                    </div>
+                    <div class="col-12 col-md-3 my-1">
+                        <p><i class="fas fa-thumbs-up me-2"></i> Like 400</p>
+                    </div>
+                    <div class="col-12 col-md-3 my-1">
+                        <p><i class="fas fa-thumbs-down me-2"></i> Dislike 400</p>
+                    </div>
+                </div>
+                <!-- audience reaction & IMDb area end -->
+            </div>
+            <!-- movie full details area end -->
+
+            <!-- right side similar movies area start -->
+            <div class="col-md-3 d-none d-sm-block p-5 similar-movies">
+                <!-- similar movies img before text area start  -->
+                <a href="#"><h5>Similar Movies</h5></a>
+                <!-- similar movies img before text area end  -->
+
+                <!-- similar movies img area start -->
+                <div class="row">
+                    <div class="col-6 col-md-6 p-1">
+                        <a href="#"><img width="100%" src="images/Anime/Classroom-of-the-Elite-Cover.jpg" alt=""></a>
+                    </div>
+                    <div class="col-6 col-md-6 p-1">
+                        <a href="#"><img width="100%" src="images/Anime/Cardfight-Vanguard-overDress-Cover.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-6 p-1">
+                        <a href="#"><img width="100%" src="images/Anime/Engage-Kiss-Cover.jpg" alt=""></a>
+                    </div>
+                    <div class="col-6 col-md-6 p-1">
+                        <a href="#\"><img width="100%" src="images/Anime/Lycoris-Recoil-Cover.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- right side similar movies area end -->
+        </div>
+        <!-- movie details end -->
+
+        <!-- comment & others area start -->
+        <div class="row mb-5">
+            <!-- comment area start -->
+            <div class="col-12 col-md-6">
+
+                <h3 class="fw-bold">Comments</h3>
+
+                <div class="top-comment bg-light p-3 rounded-2">
+                    <div class="form-floating mt-2">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments*</label>
+                    </div>
+
+                    <div class="top-comment-button mt-2">
+                        <button type="button" class="btn btn-success btn-sm">Post Comment</button>
+                    </div>
+                </div>
+
+                <h5 class="fw-bold mt-2">All Comments</h5>
+
+                <div class="all-comments bg-light p-3 rounded-2">
+                    <div class="row">
+                        <div class="col-2 profile-image">
+                            <img src="images/profile-photo/blank-profile-picture-png.png" alt="" srcset="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-between">
+                            <p><small><span class="fw-bold me-2">smfaysal_haque</span>August 25, 2022 at 9:00pm</small></p>
+                            <p>0<i class="fas fa-heart ms-1"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- comment area end -->
+
+            <!-- review area start -->
+            <div class="col-6">
+                <h3 class="fw-bold">Reviews</h3>
+
+            </div>
+            <!-- review area end -->
+        </div>
+        <!-- comment & others area end -->
+
+    </main>
+    <!-- main body end -->
+
+    <!-- footer container start -->
+    <footer class="container-fluid p-0 footer-style">
+        <!-- switch-button start -->
+        <div class="container-fluid bg-light theme-change">
+            <div class="container">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="changeTheme" checked>
+                    <label class="form-check-label" for="changeTheme">Change Theme?</label>
+                </div>
+            </div>
+        </div>
+        <!-- switch-button end -->
+
+        <!-- footer pagination start -->
+        <div class="container">
+            <div class="col-12">
+                <p><span>A-Z List</span> | <small>Movie List order by alphabet name A to Z.</small></p>
+
+                <!-- pagination start -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">A</a></li>
+                        <li class="page-item"><a class="page-link" href="#">B</a></li>
+                        <li class="page-item"><a class="page-link" href="#">C</a></li>
+                        <li class="page-item"><a class="page-link" href="#">D</a></li>
+                        <li class="page-item"><a class="page-link" href="#">E</a></li>
+                        <li class="page-item"><a class="page-link" href="#">F</a></li>
+                        <li class="page-item"><a class="page-link" href="#">G</a></li>
+                        <li class="page-item"><a class="page-link" href="#">H</a></li>
+                        <li class="page-item"><a class="page-link" href="#">I</a></li>
+                        <li class="page-item"><a class="page-link" href="#">J</a></li>
+                        <li class="page-item"><a class="page-link" href="#">K</a></li>
+                        <li class="page-item"><a class="page-link" href="#">L</a></li>
+                        <li class="page-item"><a class="page-link" href="#">M</a></li>
+                        <li class="page-item"><a class="page-link" href="#">N</a></li>
+                        <li class="page-item"><a class="page-link" href="#">O</a></li>
+                        <li class="page-item"><a class="page-link" href="#">P</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Q</a></li>
+                        <li class="page-item"><a class="page-link" href="#">R</a></li>
+                        <li class="page-item"><a class="page-link" href="#">S</a></li>
+                        <li class="page-item"><a class="page-link" href="#">T</a></li>
+                        <li class="page-item"><a class="page-link" href="#">U</a></li>
+                        <li class="page-item"><a class="page-link" href="#">V</a></li>
+                        <li class="page-item"><a class="page-link" href="#">W</a></li>
+                        <li class="page-item"><a class="page-link" href="#">X</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Y</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Z</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- pagination end -->
+            </div>
+
+            <!-- footer info area start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <h4>Help</h4>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h4>Links</h4>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                        <p><i class="fas fa-check-square me-1"></i><a href="">Subscription</a></p>
+                    </div>
+                    <div class="col-md-6 col-12 text-center">
+                        <h1>smallFoot</h1>
+                        <h6>We Have Total <span style="color: #FF6C4C;">19539</span> Movies, Tv Series And Anime In Out Database.</h6>
+                        <h6>Disclaimer: We do not store any files on our server. All contents are provided by non-affiliated third parties. We just index those links which are already available in internet.</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- footer info area end -->
+        </div>
+        <!-- footer pagination end -->
+    </footer>
+    <!-- footer container end  -->
+
+    <!-- script start -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.min.js"></script>
+    <script>
+        var slider = tns({
+            container: '.top-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: true
+        });
+    </script>
+    <!-- script end -->
+</body>
+</html>

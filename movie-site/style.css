@@ -1,0 +1,74 @@
+/* google fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* google fonts end */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* carousel style start */
+.carousel-inner{
+    padding: 2% 10%;
+}
+.carousel-item img{
+    margin-left: 5%;
+}
+/* carousel style end */
+
+.download-area button{
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #6ac045;
+}
+.download-area button a{
+    color: white;
+    text-decoration: none;
+}
+.quality-area button{
+    width: 100%;
+    padding: 3px 0px;
+    border-style: none;
+    border-radius: 3px;
+}
+.quality-area button a{
+    color: black;
+    text-decoration: none;
+}
+.watch-now button{
+    padding: 3px 0px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #09aa9ab9;
+}
+.watch-now button a{
+    color: white;
+    text-decoration: none;
+}
+.trailer-subtitle button{
+    padding: 3px 0px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #0356fc;
+}
+.trailer-subtitle button a{
+    color: white;
+    text-decoration: none;
+}
+.reaction-IMDb a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;    
+}
+.similar-movies a{
+    color: black;
+    text-decoration: none;
+}
+.all-comments .profile-image img{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
